@@ -2,14 +2,13 @@
  * Created by tsmith on 3/26/2016.
  */
 
+var http = require("http");
 
-var express = require('express');
-var app = express();
+http.createServer(function (request, response) {
 
-app.get('/', function (req, res) {
-    res.send('Hello World!');
-});
+    response.writeHead(200, {'Content-Type': 'text/plain'});
 
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
-});
+    response.end('Hello World\n');
+}).listen(8081);
+
+console.log('Server running at something');
