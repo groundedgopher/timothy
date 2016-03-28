@@ -2,13 +2,26 @@
  * Created by tsmith on 3/26/2016.
  */
 
-var http = require("http");
+// Load the necessary servers.
+var sys = require( "sys" );
+var http = require( "http" );
 
-http.createServer(function (request, response) {
+// Create our HTTP server.
+var server = http.createServer(
+    function( request, response ){
 
-    response.writeHead(200, {'Content-Type': 'text/plain'});
 
-    response.end('Hello World\n');
-}).listen(8000);
+        // Create a SUPER SIMPLE response.
+        response.writeHead( 200, {"content-type": "text/plain"} );
+        response.write( "Hellow world from AWS!\n" );
+        response.end();
 
-console.log('Server running at something');
+
+    }
+);
+
+// Point the HTTP server to port 8080.
+server.listen( 8080 );
+
+// For logging....
+sys.puts( "Server is running on 8080" );
