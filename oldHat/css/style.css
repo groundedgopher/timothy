@@ -1,0 +1,370 @@
+body {
+    background-image: url("../images/BGplayers.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #D8D8D8;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.container {
+    width: 960px;
+}
+
+#topGameMenu {
+    height: 80px;
+}
+
+#topGameMenu a {
+    float: left;
+    width: 77px;
+}
+
+#topGameMenu img {
+    width: 100%;
+}
+
+#titleImg {
+    display: block;
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+#headerTexts {
+    position: relative;
+}
+
+.bracket {
+    top: 88px;
+    position: absolute;
+}
+
+.bracket.left {
+    left: 0;
+}
+
+.bracket.right {
+    right: 0;
+}
+
+#footballLine {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.football {
+    text-align: center;
+    width: 375px;
+}
+
+#ringBellLine {
+    text-align: center;
+}
+
+#bottomBracket {
+    margin-top: -80px;;
+}
+
+#tweet {
+    position: relative;
+    bottom: 30px;
+    left: 384px;
+}
+
+#like {
+    position: relative;
+    bottom: 30px;
+    left: 392px;
+}
+
+.middleText {
+    text-align: center;
+    color: #c0c1c3;
+    font-weight: bold;
+}
+
+#video {
+    position: relative;
+    margin-top: 20px;
+}
+
+.buttonImage {
+    margin-right: 38px;
+    position: relative;
+}
+
+.buttonImageRight {
+    position: relative;
+}
+
+#buttonImageGroup {
+    margin-top: 50px;
+    position: relative;
+}
+
+#tickerImage, #bellGroup {
+    position: relative;
+    margin-top: 25px;
+}
+
+#bellBG {
+    position: absolute;
+    left: 339px;
+    top: -15px;
+    z-index: 1;
+}
+
+#ringBell {
+    z-index: 3;
+    position: absolute;
+    right: 295px;
+    top: -15px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+}
+
+#ringBell:hover {
+    transform: scale(1.15) rotate(-8deg);
+    -webkit-transform: scale(1.15) rotate(-8deg);
+}
+
+#ringBell.ring {
+    animation: ring 1s 1;
+    -webkit-animation: ring 1s 1;
+}
+
+#helpUs {
+    position: absolute;
+    top: 29px;
+    right: -2px;
+}
+
+#logo {
+    width: 221px;
+    position: absolute;
+    top: 583px;
+    left: 1129px;
+    z-index: 6;
+}
+
+#rabbit {
+    margin-top: 33px;
+}
+
+#hat {
+    margin-top: 27px;
+}
+
+#bottomStuff {
+    position: relative;
+    margin-top: 25px;
+    height: 165px;
+}
+
+#yellowBar {
+    position: relative;
+}
+
+#wallPapers {
+    position: absolute;
+    top: 21px;
+    left: 71px;
+}
+
+#tickets {
+    position: absolute;
+    top: 21px;
+    left: 410px;
+}
+
+#merchandise {
+    position: absolute;
+    top: 21px;
+    left: 677px;
+}
+
+#footerPos {
+    position: relative;
+    text-align: center;
+    background-image: url("../images/footerBars.png");
+    height: 270px;
+    background-position: center -280px;
+}
+
+#footerImage {
+    margin-top: 62px;
+}
+
+#mainContent, #bellGroup {
+    width: 827px;
+    margin: 0 auto;
+}
+
+#footerLinks {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#footerLinks li {
+    float: left;
+    padding: 0;
+    margin-right: 17px;
+}
+
+#footerLinks li a {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#numberOfRings {
+    position: absolute;
+    font-size: 95px;
+    color: #00549a;
+    top: 127px;
+    left: 380px;
+    z-index: 2;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+#gameContent {
+    position: relative;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#homeScore, #visitorScore{
+    font-size: 85px;
+    font-weight: bold;
+    color: #00549a;
+    position: absolute;
+    top: -27px;
+}
+
+#homeScore{
+    left: 275px;
+}
+
+#visitorScore{
+    left: 595px;
+}
+
+#homeInitials {
+    font-size: 37px;
+    font-weight: bold;
+    color: #00549a;
+    position: absolute;
+    top: 64px;
+    left: 262px;
+}
+
+#visitorInitials {
+    font-size: 37px;
+    font-weight: bold;
+    color: #00549a;
+    position: absolute;
+    top: 64px;
+    left: 605px;
+}
+
+#gameDay {
+    font-size: 19px;
+    font-weight: bold;
+    color: #00549a;
+    position: absolute;
+    top: 138px;
+    left: 326px;
+    width: 314px;
+    text-align: center;
+}
+
+#gameVideo {
+    position: absolute;
+    top: 426px;
+    left: 492px;
+}
+
+#frontVideo {
+    position: absolute;
+    top: 539px;
+    left: 538px;
+    z-index: 2;
+}
+
+#prevGame {
+    font-size: 12px;
+    color: #00549a;
+    position: absolute;
+    top: 143px;
+    left: 111px;
+}
+
+#nextGame {
+    font-size: 12px;
+    color: #00549a;
+    position: absolute;
+    top: 143px;
+    left: 752px;
+}
+
+div.marquee {
+    white-space:no-wrap;
+    overflow:hidden;
+    width: 715px;
+    position: relative;
+    top: -36px;
+    left: 110px;
+}
+
+div.marquee > div.marquee-text {
+    white-space:nowrap;
+    display:inline;
+    width:auto;
+    color: white;
+}
+
+#mainPageNav {
+    font-size: 12px;
+    color: #00549a;
+    position: absolute;
+    top: -40px;
+    left: 70px;
+}
+
+@keyframes ring {
+    0%{
+        transform: scale(1.15) rotate(-8deg);
+    }
+    25%{
+        transform: scale(1.15) rotate(-20deg);
+    }
+    50%{
+        transform: scale(1.15) rotate(20deg);
+    }
+    75%{
+        transform: scale(1.15) rotate(-20deg);
+    }
+    100%{
+        transform: scale(1.15) rotate(-8deg);
+    }
+}
+
+@-webkit-keyframes ring {
+    0%{
+        -webkit-transform: scale(1.15) rotate(-8deg);
+    }
+    25%{
+        -webkit-transform: scale(1.15) rotate(-20deg);
+    }
+    50%{
+        -webkit-transform: scale(1.15) rotate(20deg);
+    }
+    75%{
+        -webkit-transform: scale(1.15) rotate(-20deg);
+    }
+    100%{
+        -webkit-transform: scale(1.15) rotate(-8deg);
+    }
+}
