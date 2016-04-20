@@ -3,21 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var http = require("http");
+var app = require('express')();
+var http = require('http').Server(app);
 
-http.createServer(function (request, response) {
 
-   // Send the HTTP header 
-   // HTTP Status: 200 : OK
-   // Content Type: text/plain
-   response.writeHead(200, {'Content-Type': 'text/plain'});
-   
-   // Send the response body as "Hello World"
-   response.end('Hello World\n');
-}).listen(8081);
+app.get('/', function(req, res){
+    res.send('<h1>Hello World!!</h1>');
+});
 
-// Console will print the message
-console.log('Server running at something');
+http.listen(8081, function(){
+    console.log('listening on *:8081');
+});
+//http.createServer(function (request, response) {
+//
+//   // Send the HTTP header 
+//   // HTTP Status: 200 : OK
+//   // Content Type: text/plain
+//   response.writeHead(200, {'Content-Type': 'text/plain'});
+//   
+//   // Send the response body as "Hello World"
+//   response.end('Hello World\n');
+//}).listen(8081);
+//
+//// Console will print the message
+//console.log('Server running at something');
 
 
 
