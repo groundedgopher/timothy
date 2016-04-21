@@ -27,7 +27,7 @@ and open the template in the editor.
   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
   <script>
       var socket = io();
-      io.on('connection', function(socket){
+      socket.on('connection', function(socket){
           socket.emit('new connect', 'someone new joined');
       });
       $('form').submit(function(){
