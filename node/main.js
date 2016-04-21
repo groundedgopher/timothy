@@ -19,7 +19,7 @@ io.on('connection', function(socket){
     socket.on('new connect', function(txt){
         io.emit('new connect', txt);
     });
-});s
+});
 
 http.listen(8081, function(){
     console.log('listening on *:8081');
