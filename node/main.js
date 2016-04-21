@@ -16,7 +16,10 @@ io.on('connection', function(socket){
     socket.on('chat message', function(msg){
         io.emit('chat message', msg);
     });
-});
+    socket.on('new connect', function(txt){
+        io.emit('new connect', txt);
+    });
+});s
 
 http.listen(8081, function(){
     console.log('listening on *:8081');
