@@ -16,9 +16,7 @@ io.on('connection', function(socket){
     socket.on('chat message', function(msg){
         io.emit('chat message', msg);
     });
-    socket.on('new connect', function(txt){ console.log('howdo');
-        io.emit('new connect', txt);
-    });
+        io.emit('new connect', 'txt');
 });
 
 http.listen(8081, function(){
